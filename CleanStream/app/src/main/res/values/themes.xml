@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base theme: DayNight + NoActionBar so we control the full screen -->
+    <style name="Theme.CleanStream" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:statusBarColor">@color/colorBackground</item>
+        <item name="android:navigationBarColor">@color/colorBackground</item>
+        <item name="bottomSheetDialogTheme">@style/Theme.CleanStream.BottomSheet</item>
+    </style>
+
+    <!-- Bottom sheet inherits the dark surface color -->
+    <style name="Theme.CleanStream.BottomSheet" parent="Theme.MaterialComponents.BottomSheetDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="bottomSheetStyle">@style/Widget.CleanStream.BottomSheet</item>
+    </style>
+
+    <style name="Widget.CleanStream.BottomSheet" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="backgroundTint">@color/colorSurface</item>
+    </style>
+</resources>

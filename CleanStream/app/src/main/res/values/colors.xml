@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand colors -->
+    <color name="colorPrimary">#FFCC0000</color>       <!-- YouTube red -->
+    <color name="colorOnPrimary">#FFFFFFFF</color>     <!-- White text on red -->
+
+    <!-- Background colors — dark theme -->
+    <color name="colorBackground">#FF0F0F0F</color>    <!-- Near-black page background -->
+    <color name="colorSurface">#FF1F1F1F</color>       <!-- Card/sheet surface -->
+    <color name="colorOnSurface">#FFFFFFFF</color>     <!-- Primary text on surface -->
+    <color name="colorOnSurfaceVariant">#FF9E9E9E</color> <!-- Secondary/hint text -->
+
+    <!-- UI detail colors -->
+    <color name="colorDivider">#FF2E2E2E</color>       <!-- Subtle divider lines -->
+    <color name="colorDragHandle">#FF5E5E5E</color>    <!-- Bottom sheet drag handle -->
+    <color name="colorTrack">#FF444444</color>         <!-- Switch track background -->
+</resources>

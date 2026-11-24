@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CleanStream</string>
+    <string name="settings_title">CleanStream Settings</string>
+    <string name="settings_button_description">Open settings</string>
+    <string name="toggle_block_ads">Block Ads</string>
+    <string name="toggle_block_ads_desc">Remove all YouTube ads</string>
+    <string name="toggle_block_shorts">Hide Shorts</string>
+    <string name="toggle_block_shorts_desc">Remove Shorts from feed &amp; redirect to player</string>
+    <string name="toggle_background_play">Background Play</string>
+    <string name="toggle_background_play_desc">Keep audio playing when screen is off</string>
+    <string name="toggle_block_system_ads">Block Ads in All Apps (VPN)</string>
+    <string name="toggle_block_system_ads_desc">Filters ads across all games, browsers &amp; system apps</string>
+    <string name="btn_private_dns_setup">⚡ Setup Private DNS (Zero Battery, No VPN)</string>
+    <string name="dns_copied_toast">Private DNS hostname copied to clipboard!</string>
+    <string name="done">Done</string>
+</resources>

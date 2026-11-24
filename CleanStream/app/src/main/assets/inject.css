@@ -1,0 +1,49 @@
+/* inject.css — CleanStream cosmetic ad & Shorts filter
+   Injected via JavaScript at page-start to prevent flash of ad content.
+   Uses !important to override YouTube's inline styles. */
+
+/* ── Prevent ad video frames from being visible during instant seek ── */
+.ad-showing video,
+.ad-interrupting video,
+.html5-video-player.ad-showing .html5-main-video {
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* ── Video Ad Overlays ───────────────────────────────────── */
+.ytm-promoted-sparkles-web-renderer,
+.ytm-banner-promo-renderer,
+ytm-paid-content-overlay-renderer,
+.ytp-ad-overlay-container,
+.ytp-ad-text-overlay,
+.ytp-ad-player-overlay,
+.ytp-ad-player-overlay-flyout-cta,
+.ytp-ad-action-interstitial,
+.ytp-ad-survey,
+.ytp-ad-preview-container,
+.ytp-ad-message-container,
+#player-ads,
+ytm-companion-slot,
+.ytm-promoted-video-renderer,
+ytm-display-ad-renderer,
+ytm-action-companion-ad-renderer,
+ytm-companion-ad-renderer,
+#masthead-ad,
+yt-mealbar-promo-renderer,
+.ytd-ad-slot-renderer {
+    display: none !important;
+}
+
+/* ── Shorts Feed Shelves ─────────────────────────────────── */
+ytm-reel-shelf-renderer,
+ytd-reel-shelf-renderer,
+ytd-rich-shelf-renderer[is-shorts],
+#shorts-container,
+[is-shorts] {
+    display: none !important;
+}
+
+/* ── Shorts Nav Button (mobile bottom tab bar) ───────────── */
+ytm-pivot-bar-item-renderer[tab-identifier="FEshorts"] {
+    display: none !important;
+}
