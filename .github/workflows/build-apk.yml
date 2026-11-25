@@ -8,6 +8,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./CleanStream
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -20,6 +24,8 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: wrapper
 
       - name: Build Debug APK
         run: gradle assembleDebug
@@ -28,4 +34,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: app-debug-apk
-          path: app/build/outputs/apk/debug/*.apk
+          path: CleanStream/app/build/outputs/apk/debug/*.apk
